@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color: brown;
+            --custom-width: 330px;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 430px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 30px brown;  x,y*/ 
+            /* box-shadow: -10px -20px brown; -x,-y*/
+            /* box-shadow: 10px 20px 100px brown; x,y,blur*/
+            /* box-shadow: 10px 20px 10px 10px brown; x,y,blur, spread */
+            /* box-shadow: inset 10px 15px 60px brown; */
+            /* box-shadow: 10px 20px red,15px 25px yellow; */
+
+        }
+        #head1{
+            /* text-shadow: 2px 3px 2px rgb(222, 87, 87); */
+            /* text-shadow: yellow 2px 3px 2px; */
+            text-shadow: 1px 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="any.png" width="300px">
+            <h2 id="head1">Welcome To Code Help</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur enim ex delectus aperiam atque architecto eligendi ipsam excepturi tempora sed distinctio, odit adipisci rerum praesentium.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

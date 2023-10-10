@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Event Registration</h1>
+    <form>
+        <lable for="name1">Name: </lable><br>
+        <input type="name" id="name1" name="name1">
+        <br/>
+        <lable for="emailID">Email: </lable><br>
+        <input type="email" id="emailID" name="emailID">
+        <br/>
+        <lable for="phone">Phone: </lable><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+        <br/>
+        <lable for="Occupation">Occupation: </lable><br>
+        <select name="Occupation" id="Occupation">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Topic Of Interset</legend>
+            <input type="checkbox" id="interest" name="interest">
+            <label for="interest">HTML </label>
+            <input type="checkbox" id="interset" name="interest">
+            <label for="interest">CSS </label>
+            <input type="checkbox" id="interest" name="interest">
+            <label for="interest">Java Script </label>
+        </fieldset>
+        <br>
+        <label for="textarea">comment: </label><br>
+        <textarea name="textarea" id="textarea" cols="125%" rows="10"></textarea>
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <br><br><br>
+
+    <h1>Job Application</h1>
+    <form>
+        <lable for="name1">Name: </lable><br>
+        <input type="name" id="name1" name="name1">
+        <br/>
+        <lable for="emailID">Email: </lable><br>
+        <input type="email" id="emailID" name="emailID">
+        <br/>
+        <lable for="phone">Phone: </lable><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+        <br/>
+        <lable for="resume">Resume: </lable><br>
+        <input type="file" id="resume" name="resume">
+        <br/>
+        <lable for="exp">Experience: </lable><br>
+        <input type="number" id="exp" name="exp" min="0" max="25">
+        <br/>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" id="interest" name="interest">
+            <label for="interest">HTML </label>
+            <input type="checkbox" id="interset" name="interest">
+            <label for="interest">CSS </label>
+            <input type="checkbox" id="interest" name="interest">
+            <label for="interest">Java Script </label>
+        </fieldset>
+        <label for="Education">Highest Education: </label><br>
+        <select name="Education" id="Education">
+            <option value="High">High School</option>
+            <option value="Intermediate">Intermediate School</option>
+            <option value="Degree">Degree</option>
+        </select>
+        <fieldset>
+            <legend>Avalability:</legend>
+            <label for="radio">Full Time</label>
+            <input type="radio" id="radio" name="radio" >
+            <br>
+            <label for="radio">Part Time</label>
+            <input type="radio" id="radio" name="radio" >
+        </fieldset>
+        <br>
+        <label for="copypaste">Adittional Comment: </label> <br>
+        <textarea name="copypaste" id="copypaste" cols="123" rows="10"></textarea>
+        <input type="button" name="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
